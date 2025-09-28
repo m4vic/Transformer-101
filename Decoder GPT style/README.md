@@ -21,10 +21,9 @@ graph TD
     J --> K[Repeat N Decoder Layers]
     K --> L[Linear Output Layer]
     L --> M[Softmax]
-    M --> N[Loss (CrossEntropy)]
+    M --> N["Loss (CrossEntropy)"]
     N --> O[Training Loop]
     O --> P[Inference - Text Generation]
-
 ```
 # Input text → tokens → embeddings → processed through decoder blocks → softmax outputs probabilities of next word → trained with CrossEntropy loss.
 
