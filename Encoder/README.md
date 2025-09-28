@@ -5,7 +5,7 @@
 ---
 
 ##  1. Data Flow Overview
-```mermaid 
+```mermaid
 graph TD
     A[Raw Input Data] --> B[Tokenization]
     B --> C[Dataset & Collate Batch]
@@ -17,14 +17,13 @@ graph TD
     H --> I[Transformer Encoder (Stacked Layers)]
     I --> J[Sentiment Classifier Head]
     J --> K[Training Loop & Prediction]
-
 ```
 
 ## 2. Data Loading 
-
+```
 from datasets import load_dataset
 raw = load_dataset("ag_news")
-
+```
 We import the AG News dataset from Hugging Face.
 
 
@@ -64,7 +63,7 @@ Multi-head attention + residual connection + normalization
 Feed forward network + residual connection + normalization
 
 ## 6. Transformer Encoder
-
+```
 encoder = TransformerEncoder(
     vocab_size=vocab_size,
     d_model=128,
@@ -75,12 +74,13 @@ encoder = TransformerEncoder(
     dropout=0.1,
     pad_idx=0
 )
-
+```
 Stacks 2 encoder layers.
 d_model=128: embedding size.
 n_heads=4: multi-head attention.
 dim_ff=512: feed-forward network size.
 Handles sequences up to 256 tokens.
+
 ## Training and Model - 
 
 Model runs on GPU if available.
