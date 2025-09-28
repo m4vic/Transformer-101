@@ -1,11 +1,13 @@
-#  Custom Transformer Encoder + Sentiment Classifier
+# 🧠 Custom Transformer Encoder + Sentiment Classifier
 
 > This repository implements a Transformer-based encoder from scratch and uses it for sentiment classification on the AG News dataset. Each section links to the corresponding code in Google Colab for full implementation.
 
 ---
 
-##  1. Data Flow Overview
+## 📊 1. Data Flow Overview
+
 ```mermaid
+graph TD
     A[Raw Input Data] --> B[Tokenization]
     B --> C[Dataset & Collate Batch]
     C --> D[Positional Encoding]
@@ -16,7 +18,9 @@
     H --> I[Transformer Encoder (Stacked Layers)]
     I --> J[Sentiment Classifier Head]
     J --> K[Training Loop & Prediction]
-```
+
+
+
 
 ## 2. Data Loading 
 ```
