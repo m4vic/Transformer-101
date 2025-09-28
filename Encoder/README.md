@@ -4,23 +4,22 @@
 
 ---
 
-## 📊 1. Data Flow Overview
+## 1. Data Flow Overview
 
 ```mermaid
 graph TD
-A[Raw Input Data] --> B[Tokenization]
-B --> C[Dataset & Collate Batch]
-C --> D[Positional Encoding]
-D --> E[Scaled Dot Product Attention]
-E --> F[Multi-Head Attention]
-F --> G[Feed Forward Network]
-G --> H[Encoder Layer]
-H --> I[Transformer Encoder - Stacked Layers]
-I --> J[Sentiment Classifier Head]
-J --> K[Training Loop & Prediction]
+    A[Raw Input Data] --> B[Tokenization]
+    B --> C[Dataset & Collate Batch]
+    C --> D[Positional Encoding]
+    D --> E[Scaled Dot Product Attention]
+    E --> F[Multi-Head Attention]
+    F --> G[Feed Forward Network]
+    G --> H[Encoder Layer]
+    H --> I[Transformer Encoder - Stacked Layers]
+    I --> J[Sentiment Classifier Head]
+    J --> K[Training Loop & Prediction]
 
-
-
+```
 
 ## 2. Data Loading 
 ```
