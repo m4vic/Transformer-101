@@ -15,7 +15,7 @@ graph TD
     E --> F[Multi-Head Attention]
     F --> G[Feed Forward Network]
     G --> H[Encoder Layer]
-    H --> I[Transformer Encoder (Stacked Layers)]
+    H --> I[Transformer Encoder - Stacked Layers]
     I --> J[Sentiment Classifier Head]
     J --> K[Training Loop & Prediction]
 
