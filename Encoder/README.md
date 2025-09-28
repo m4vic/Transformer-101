@@ -6,7 +6,6 @@
 
 ##  1. Data Flow Overview
 ```mermaid
-graph TD
     A[Raw Input Data] --> B[Tokenization]
     B --> C[Dataset & Collate Batch]
     C --> D[Positional Encoding]
